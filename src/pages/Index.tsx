@@ -442,7 +442,7 @@ export default function Index() {
 
             <div className="space-y-4">
               {[
-                { icon: "Mail", label: "Email", value: "support@aviato-vpn.ru", sub: "Ответим в течение 1 часа" },
+                { icon: "Mail", label: "Email", value: "gmail@aviato.ru", sub: "Ответим в течение 1 часа" },
                 { icon: "MessageCircle", label: "Telegram", value: "@aviatovpn_support", sub: "Круглосуточная поддержка" },
                 { icon: "Phone", label: "Телефон", value: "+7 900 361-08-00", sub: "Бесплатно по России" },
               ].map((c) => (
