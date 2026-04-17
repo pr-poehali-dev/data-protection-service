@@ -442,9 +442,9 @@ export default function Index() {
 
             <div className="space-y-4">
               {[
-                { icon: "Mail", label: "Email", value: "gmail@aviato.ru", sub: "Ответим в течение 1 часа" },
+                { icon: "Mail", label: "Email", value: "gmail@aviato.ru", sub: "Ответим в течение 1 часа", link: "mailto:gmail@aviato.ru" },
                 { icon: "MessageCircle", label: "Telegram", value: "@aviatoVPN", sub: "Круглосуточная поддержка", link: "https://t.me/aviatoVPN" },
-                { icon: "Phone", label: "Телефон", value: "+7 900 361-08-00", sub: "Бесплатно по России" },
+                { icon: "Phone", label: "Телефон", value: "+7 900 361-08-00", sub: "Бесплатно по России", link: "tel:+79003610800" },
               ].map((c) => {
                 const inner = (
                   <>
