@@ -252,7 +252,7 @@ export default function Index() {
 
           <p className="max-w-xl text-[hsl(var(--muted-foreground))] text-base md:text-lg mb-10 leading-relaxed animate-fade-up delay-300 opacity-0">
             Шифруйте трафик с AES-256, скрывайте IP-адрес и обходите любые блокировки.
-            Более 2 миллионов пользователей уже защищены NexusVPN.
+            Более 2000 пользователей уже защищены AVIATO VPN.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-up delay-400 opacity-0">
@@ -269,7 +269,7 @@ export default function Index() {
 
           <div className="flex flex-wrap gap-8 mt-16 animate-fade-up delay-500 opacity-0">
             {[
-              { val: "2M+", label: "пользователей" },
+              { val: "2000+", label: "пользователей" },
               { val: "45", label: "стран" },
               { val: "99.9%", label: "uptime" },
               { val: "0", label: "логов" },
