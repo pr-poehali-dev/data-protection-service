@@ -160,7 +160,7 @@ export default function Index() {
               <Icon name="Shield" size={14} className="text-[hsl(var(--cyan))] -rotate-45" />
             </div>
             <span className="font-['Orbitron'] font-bold text-lg tracking-widest text-[hsl(var(--cyan))] text-glow">
-              NEXUSVPN
+              AVIATO VPN
             </span>
           </div>
 
@@ -242,7 +242,7 @@ export default function Index() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-black mb-4 leading-none animate-fade-up delay-100 opacity-0">
-            <span className="text-[hsl(var(--foreground))]">NEXUS</span>
+            <span className="text-[hsl(var(--foreground))]">AVIATO</span>
             <span className="text-glow text-[hsl(var(--cyan))]">VPN</span>
           </h1>
 
@@ -442,8 +442,8 @@ export default function Index() {
 
             <div className="space-y-4">
               {[
-                { icon: "Mail", label: "Email", value: "support@nexusvpn.ru", sub: "Ответим в течение 1 часа" },
-                { icon: "MessageCircle", label: "Telegram", value: "@nexusvpn_support", sub: "Круглосуточная поддержка" },
+                { icon: "Mail", label: "Email", value: "support@aviato-vpn.ru", sub: "Ответим в течение 1 часа" },
+                { icon: "MessageCircle", label: "Telegram", value: "@aviatovpn_support", sub: "Круглосуточная поддержка" },
                 { icon: "Phone", label: "Телефон", value: "+7 800 000-00-00", sub: "Бесплатно по России" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4 p-5 border border-[hsl(var(--border))] bg-[hsl(var(--card))] clip-corner border-glow-hover transition-all duration-300 group">
@@ -476,9 +476,9 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="border-t border-[hsl(var(--border))] py-8">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="font-['Orbitron'] text-sm font-bold text-[hsl(var(--cyan))] text-glow tracking-widest">NEXUSVPN</div>
+          <div className="font-['Orbitron'] text-sm font-bold text-[hsl(var(--cyan))] text-glow tracking-widest">AVIATO VPN</div>
           <div className="font-mono-tech text-xs text-[hsl(var(--muted-foreground))] text-center">
-            © 2024 NexusVPN · Ваши данные защищены · Политика конфиденциальности
+            © 2024 AviatoVPN · Ваши данные защищены · Политика конфиденциальности
           </div>
           <div className="flex items-center gap-2 font-mono-tech text-xs text-[hsl(var(--muted-foreground))]">
             <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--accent))] animate-pulse" />
