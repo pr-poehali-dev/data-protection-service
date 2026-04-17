@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1776386438779385050.html"
 	],
 	prefix: "",
 	theme: {
@@ -63,6 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			fontFamily: {
+				'orbitron': ['Orbitron', 'monospace'],
+				'mono-tech': ['"Share Tech Mono"', 'monospace'],
+				'ibm': ['"IBM Plex Sans"', 'sans-serif'],
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -88,7 +94,30 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-ring': 'pulse-ring 3s ease-out infinite',
+				'float': 'float 4s ease-in-out infinite',
+				'fade-up': 'fade-up 0.7s ease forwards',
+				'blink': 'blink-cursor 1s step-end infinite',
+			},
+			keyframes: {
+				...({} as Record<string, Record<string, Record<string, string>>>),
+				'pulse-ring': {
+					'0%': { transform: 'scale(1)', opacity: '0.8' },
+					'100%': { transform: 'scale(2.5)', opacity: '0' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-15px)' },
+				},
+				'fade-up': {
+					from: { opacity: '0', transform: 'translateY(30px)' },
+					to: { opacity: '1', transform: 'translateY(0)' },
+				},
+				'blink-cursor': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' },
+				},
 			}
 		}
 	},
