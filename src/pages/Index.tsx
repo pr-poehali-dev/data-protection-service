@@ -444,7 +444,7 @@ export default function Index() {
               {[
                 { icon: "Mail", label: "Email", value: "support@aviato-vpn.ru", sub: "Ответим в течение 1 часа" },
                 { icon: "MessageCircle", label: "Telegram", value: "@aviatovpn_support", sub: "Круглосуточная поддержка" },
-                { icon: "Phone", label: "Телефон", value: "+7 800 000-00-00", sub: "Бесплатно по России" },
+                { icon: "Phone", label: "Телефон", value: "+7 900 361-08-00", sub: "Бесплатно по России" },
               ].map((c) => (
                 <div key={c.label} className="flex items-start gap-4 p-5 border border-[hsl(var(--border))] bg-[hsl(var(--card))] clip-corner border-glow-hover transition-all duration-300 group">
                   <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center border border-[hsl(var(--border))] group-hover:border-[hsl(var(--cyan))] transition-colors clip-corner-sm">
