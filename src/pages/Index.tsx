@@ -443,20 +443,26 @@ export default function Index() {
             <div className="space-y-4">
               {[
                 { icon: "Mail", label: "Email", value: "gmail@aviato.ru", sub: "Ответим в течение 1 часа" },
-                { icon: "MessageCircle", label: "Telegram", value: "@aviatovpn_support", sub: "Круглосуточная поддержка" },
+                { icon: "MessageCircle", label: "Telegram", value: "@aviatoVPN", sub: "Круглосуточная поддержка", link: "https://t.me/aviatoVPN" },
                 { icon: "Phone", label: "Телефон", value: "+7 900 361-08-00", sub: "Бесплатно по России" },
-              ].map((c) => (
-                <div key={c.label} className="flex items-start gap-4 p-5 border border-[hsl(var(--border))] bg-[hsl(var(--card))] clip-corner border-glow-hover transition-all duration-300 group">
-                  <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center border border-[hsl(var(--border))] group-hover:border-[hsl(var(--cyan))] transition-colors clip-corner-sm">
-                    <Icon name={c.icon as "Mail" | "MessageCircle" | "Phone"} size={18} className="text-[hsl(var(--cyan))]" />
-                  </div>
-                  <div>
-                    <div className="font-mono-tech text-xs text-[hsl(var(--muted-foreground))] uppercase tracking-widest mb-0.5">{c.label}</div>
-                    <div className="font-['Orbitron'] text-sm font-semibold text-[hsl(var(--foreground))] group-hover:text-[hsl(var(--cyan))] transition-colors">{c.value}</div>
-                    <div className="text-xs text-[hsl(var(--muted-foreground))] mt-0.5">{c.sub}</div>
-                  </div>
-                </div>
-              ))}
+              ].map((c) => {
+                const inner = (
+                  <>
+                    <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center border border-[hsl(var(--border))] group-hover:border-[hsl(var(--cyan))] transition-colors clip-corner-sm">
+                      <Icon name={c.icon as "Mail" | "MessageCircle" | "Phone"} size={18} className="text-[hsl(var(--cyan))]" />
+                    </div>
+                    <div>
+                      <div className="font-mono-tech text-xs text-[hsl(var(--muted-foreground))] uppercase tracking-widest mb-0.5">{c.label}</div>
+                      <div className="font-['Orbitron'] text-sm font-semibold text-[hsl(var(--foreground))] group-hover:text-[hsl(var(--cyan))] transition-colors">{c.value}</div>
+                      <div className="text-xs text-[hsl(var(--muted-foreground))] mt-0.5">{c.sub}</div>
+                    </div>
+                  </>
+                );
+                const cls = "flex items-start gap-4 p-5 border border-[hsl(var(--border))] bg-[hsl(var(--card))] clip-corner border-glow-hover transition-all duration-300 group";
+                return (c as { icon: string; label: string; value: string; sub: string; link?: string }).link
+                  ? <a key={c.label} href={(c as { icon: string; label: string; value: string; sub: string; link?: string }).link} target="_blank" rel="noopener noreferrer" className={cls}>{inner}</a>
+                  : <div key={c.label} className={cls}>{inner}</div>;
+              })}
 
               <div className="p-5 border border-[hsl(var(--accent))] bg-[rgba(0,255,128,0.05)] clip-corner">
                 <div className="flex items-center gap-2 mb-2">
